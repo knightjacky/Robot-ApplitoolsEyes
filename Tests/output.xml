@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160122 12:59:27.634" generator="Robot 3.0 (Python 2.7.10 on darwin)">
+<suite id="s1" name="Win8 Firefox &amp; Win8 Chrome">
+<suite source="/Users/Andrew/Projects/Robot-BrowserStack/Tests/Windows8/Win8_Firefox.robot" id="s1-s1" name="Win8 Firefox">
+<test id="s1-s1-t1" name="Open Rangle.io Website">
+<kw name="Open Browser To Home Page" library="openBrowser">
+<arguments>
+<arg>BROWSER=Firefox</arg>
+<arg>BROWSER VERSION=43.0</arg>
+<arg>OS=Windows</arg>
+<arg>OS VERSION=8</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>url=${URL}</arg>
+<arg>browser=chrome</arg>
+<arg>alias=None</arg>
+<arg>remote_url=http://rehanarajwani1:bwrxEqELu83iJs4DsBws@hub.browserstack.com:80/wd/hub</arg>
+<arg>desired_capabilities=browser:${BROWSER},browser_version:${BROWSER VERSION},os:${OS}, os_version:${OS VERSION},resolution:1680x1050</arg>
+</arguments>
+<msg timestamp="20160122 12:59:27.775" level="INFO">Opening browser 'chrome' to base url 'http://www.rangle.io' through remote server at 'http://rehanarajwani1:bwrxEqELu83iJs4DsBws@hub.browserstack.com:80/wd/hub'</msg>
+<status status="PASS" endtime="20160122 12:59:42.850" starttime="20160122 12:59:27.775"></status>
+</kw>
+<status status="PASS" endtime="20160122 12:59:42.850" starttime="20160122 12:59:27.774"></status>
+</kw>
+<kw name="RobotEyes Test" library="openBrowser">
+<kw name="Open Eyes Session" library="RobotAppEyes">
+<doc>Starts a session with the Applitools Eyes Website.</doc>
+<arguments>
+<arg>${Applitools-url}</arg>
+<arg>${Applitools-AppName}</arg>
+<arg>${Applitools-TestName}1.0</arg>
+<arg>${Applitools-Key}</arg>
+<arg>width=${Width}</arg>
+<arg>height=${Height}</arg>
+<arg>includeEyesLog=${True}</arg>
+</arguments>
+<msg timestamp="20160122 12:59:42.852" level="INFO">open(Rangle_Test, Rangle_RobotAppEyes_Test1.0, {'width': 1024, 'height': 768}, OnClose)</msg>
+<msg timestamp="20160122 12:59:45.511" level="INFO">2016-01-22 12:59:42,851 [INFO] eyes: open(Rangle_Test, Rangle_RobotAppEyes_Test1.0, {'width': 1024, 'height': 768}, OnClose)
+2016-01-22 12:59:42,851 [INFO] eyes: open(Rangle_Test, Rangle_RobotAppEyes_Test1.0, {'width': 1024, 'height': 768}, OnClose)</msg>
+<status status="PASS" endtime="20160122 12:59:45.511" starttime="20160122 12:59:42.851"></status>
+</kw>
+<kw name="Check Eyes Region" library="RobotAppEyes">
+<doc>Takes a snapshot of the given region from the browser using the web driver to locate an xpath element</doc>
+<arguments>
+<arg>/html/body/header</arg>
+<arg>1501</arg>
+<arg>67</arg>
+<arg>Header</arg>
+</arguments>
+<msg timestamp="20160122 12:59:46.071" level="INFO">check_region([(0, 0) 1501 x 67], 'Header')</msg>
+<msg timestamp="20160122 12:59:50.197" level="INFO">No OS set, checking for mobile OS...</msg>
+<msg timestamp="20160122 12:59:50.197" level="INFO">No mobile OS detected.</msg>
+<msg timestamp="20160122 12:59:50.665" level="INFO">Starting new HTTPS connection (1): eyessdk.applitools.com</msg>
+<msg timestamp="20160122 13:00:02.841" level="INFO">Starting new HTTPS connection (1): eyessdk.applitools.com</msg>
+<status status="PASS" endtime="20160122 13:00:03.429" starttime="20160122 12:59:45.511"></status>
+</kw>
+<kw name="Close Eyes Session" library="RobotAppEyes">
+<doc>Closes a session and returns the results of the session.</doc>
+<msg timestamp="20160122 13:00:03.430" level="INFO">close(): Closing session...</msg>
+<msg timestamp="20160122 13:00:03.432" level="INFO">Starting new HTTPS connection (1): eyessdk.applitools.com</msg>
+<msg timestamp="20160122 13:00:04.039" level="INFO">close(): Existing test [ steps: 1, matches: 1, mismatches: 0, missing: 0 ], URL: https://eyes.applitools.com/app/sessions/251948815209663?accountId=dYdmE81UUbuuX4iUhgKyEBDAbjSGaLb40BKJUcGx9gk110</msg>
+<msg timestamp="20160122 13:00:04.039" level="INFO">--- Test passed.</msg>
+<status status="PASS" endtime="20160122 13:00:04.039" starttime="20160122 13:00:03.429"></status>
+</kw>
+<status status="PASS" endtime="20160122 13:00:04.039" starttime="20160122 12:59:42.850"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160122 13:00:08.544" starttime="20160122 13:00:04.040"></status>
+</kw>
+<status status="PASS" endtime="20160122 13:00:08.544" critical="yes" starttime="20160122 12:59:27.773"></status>
+</test>
+<test id="s1-s1-t2" name="Verify Inquire Button Is Selectable On Rangle.io Homepage">
+<kw name="Open Browser To Home Page" library="openBrowser">
+<arguments>
+<arg>BROWSER=Firefox</arg>
+<arg>BROWSER VERSION=43.0</arg>
+<arg>OS=Windows</arg>
+<arg>OS VERSION=8</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>url=${URL}</arg>
+<arg>browser=chrome</arg>
+<arg>alias=None</arg>
+<arg>remote_url=http://rehanarajwani1:bwrxEqELu83iJs4DsBws@hub.browserstack.com:80/wd/hub</arg>
+<arg>desired_capabilities=browser:${BROWSER},browser_version:${BROWSER VERSION},os:${OS}, os_version:${OS VERSION},resolution:1680x1050</arg>
+</arguments>
+<msg timestamp="20160122 13:00:08.548" level="INFO">Opening browser 'chrome' to base url 'http://www.rangle.io' through remote server at 'http://rehanarajwani1:bwrxEqELu83iJs4DsBws@hub.browserstack.com:80/wd/hub'</msg>
+<status status="PASS" endtime="20160122 13:00:23.317" starttime="20160122 13:00:08.547"></status>
+</kw>
+<status status="PASS" endtime="20160122 13:00:23.317" starttime="20160122 13:00:08.546"></status>
+</kw>
+<kw name="User Selects Inquire" library="openBrowser">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>${INQUIRE}</arg>
+</arguments>
+<msg timestamp="20160122 13:00:23.319" level="INFO">Verifying element 'css=a.header__menu-item--always-show' is visible.</msg>
+<status status="PASS" endtime="20160122 13:00:24.938" starttime="20160122 13:00:23.318"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${INQUIRE}</arg>
+</arguments>
+<msg timestamp="20160122 13:00:24.939" level="INFO">Clicking element 'css=a.header__menu-item--always-show'.</msg>
+<status status="PASS" endtime="20160122 13:00:26.877" starttime="20160122 13:00:24.938"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${CONTACT}</arg>
+</arguments>
+<status status="PASS" endtime="20160122 13:00:27.726" starttime="20160122 13:00:26.878"></status>
+</kw>
+<status status="PASS" endtime="20160122 13:00:27.726" starttime="20160122 13:00:23.318"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160122 13:00:32.200" starttime="20160122 13:00:27.726"></status>
+</kw>
+<status status="PASS" endtime="20160122 13:00:32.200" critical="yes" starttime="20160122 13:00:08.545"></status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160122 13:00:32.203" starttime="20160122 13:00:32.202"></status>
+</kw>
+<status status="PASS" endtime="20160122 13:00:32.203" starttime="20160122 12:59:27.660"></status>
+</suite>
+<suite source="/Users/Andrew/Projects/Robot-BrowserStack/Tests/Windows8/Win8_Chrome.robot" id="s1-s2" name="Win8 Chrome">
+<test id="s1-s2-t1" name="Open Rangle.io Website">
+<kw name="Open Browser To Home Page" library="openBrowser">
+<arguments>
+<arg>BROWSER=Chrome</arg>
+<arg>BROWSER VERSION=47.0</arg>
+<arg>OS=Windows</arg>
+<arg>OS VERSION=8</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>url=${URL}</arg>
+<arg>browser=chrome</arg>
+<arg>alias=None</arg>
+<arg>remote_url=http://rehanarajwani1:bwrxEqELu83iJs4DsBws@hub.browserstack.com:80/wd/hub</arg>
+<arg>desired_capabilities=browser:${BROWSER},browser_version:${BROWSER VERSION},os:${OS}, os_version:${OS VERSION},resolution:1680x1050</arg>
+</arguments>
+<msg timestamp="20160122 13:00:32.211" level="INFO">Opening browser 'chrome' to base url 'http://www.rangle.io' through remote server at 'http://rehanarajwani1:bwrxEqELu83iJs4DsBws@hub.browserstack.com:80/wd/hub'</msg>
+<status status="PASS" endtime="20160122 13:00:43.190" starttime="20160122 13:00:32.210"></status>
+</kw>
+<status status="PASS" endtime="20160122 13:00:43.190" starttime="20160122 13:00:32.210"></status>
+</kw>
+<kw name="RobotEyes Test" library="openBrowser">
+<kw name="Open Eyes Session" library="RobotAppEyes">
+<doc>Starts a session with the Applitools Eyes Website.</doc>
+<arguments>
+<arg>${Applitools-url}</arg>
+<arg>${Applitools-AppName}</arg>
+<arg>${Applitools-TestName}1.0</arg>
+<arg>${Applitools-Key}</arg>
+<arg>width=${Width}</arg>
+<arg>height=${Height}</arg>
+<arg>includeEyesLog=${True}</arg>
+</arguments>
+<msg timestamp="20160122 13:00:43.194" level="INFO">open(Rangle_Test, Rangle_RobotAppEyes_Test1.0, {'width': 1024, 'height': 768}, OnClose)</msg>
+<msg timestamp="20160122 13:00:46.337" level="INFO">2016-01-22 13:00:43,193 [INFO] eyes: open(Rangle_Test, Rangle_RobotAppEyes_Test1.0, {'width': 1024, 'height': 768}, OnClose)
+2016-01-22 13:00:43,193 [INFO] eyes: open(Rangle_Test, Rangle_RobotAppEyes_Test1.0, {'width': 1024, 'height': 768}, OnClose)</msg>
+<status status="PASS" endtime="20160122 13:00:46.337" starttime="20160122 13:00:43.191"></status>
+</kw>
+<kw name="Check Eyes Region" library="RobotAppEyes">
+<doc>Takes a snapshot of the given region from the browser using the web driver to locate an xpath element</doc>
+<arguments>
+<arg>/html/body/header</arg>
+<arg>1501</arg>
+<arg>67</arg>
+<arg>Header</arg>
+</arguments>
+<msg timestamp="20160122 13:00:46.985" level="INFO">check_region([(0, 0) 1501 x 67], 'Header')</msg>
+<msg timestamp="20160122 13:00:51.308" level="INFO">No OS set, checking for mobile OS...</msg>
+<msg timestamp="20160122 13:00:51.309" level="INFO">No mobile OS detected.</msg>
+<msg timestamp="20160122 13:00:52.168" level="INFO">Starting new HTTPS connection (1): eyessdk.applitools.com</msg>
+<msg timestamp="20160122 13:01:02.408" level="INFO">Starting new HTTPS connection (1): eyessdk.applitools.com</msg>
+<status status="PASS" endtime="20160122 13:01:03.179" starttime="20160122 13:00:46.338"></status>
+</kw>
+<kw name="Close Eyes Session" library="RobotAppEyes">
+<doc>Closes a session and returns the results of the session.</doc>
+<msg timestamp="20160122 13:01:03.180" level="INFO">close(): Closing session...</msg>
+<msg timestamp="20160122 13:01:03.182" level="INFO">Starting new HTTPS connection (1): eyessdk.applitools.com</msg>
+<msg timestamp="20160122 13:01:03.840" level="INFO">close(): Existing test [ steps: 1, matches: 1, mismatches: 0, missing: 0 ], URL: https://eyes.applitools.com/app/sessions/251948815148614?accountId=dYdmE81UUbuuX4iUhgKyEBDAbjSGaLb40BKJUcGx9gk110</msg>
+<msg timestamp="20160122 13:01:03.840" level="INFO">--- Test passed.</msg>
+<status status="PASS" endtime="20160122 13:01:03.840" starttime="20160122 13:01:03.179"></status>
+</kw>
+<status status="PASS" endtime="20160122 13:01:03.841" starttime="20160122 13:00:43.191"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160122 13:01:08.652" starttime="20160122 13:01:03.841"></status>
+</kw>
+<status status="PASS" endtime="20160122 13:01:08.652" critical="yes" starttime="20160122 13:00:32.209"></status>
+</test>
+<test id="s1-s2-t2" name="Verify Inquire Button Is Selectable On Rangle.io Homepage">
+<kw name="Open Browser To Home Page" library="openBrowser">
+<arguments>
+<arg>BROWSER=Chrome</arg>
+<arg>BROWSER VERSION=47.0</arg>
+<arg>OS=Windows</arg>
+<arg>OS VERSION=8</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>url=${URL}</arg>
+<arg>browser=chrome</arg>
+<arg>alias=None</arg>
+<arg>remote_url=http://rehanarajwani1:bwrxEqELu83iJs4DsBws@hub.browserstack.com:80/wd/hub</arg>
+<arg>desired_capabilities=browser:${BROWSER},browser_version:${BROWSER VERSION},os:${OS}, os_version:${OS VERSION},resolution:1680x1050</arg>
+</arguments>
+<msg timestamp="20160122 13:01:08.655" level="INFO">Opening browser 'chrome' to base url 'http://www.rangle.io' through remote server at 'http://rehanarajwani1:bwrxEqELu83iJs4DsBws@hub.browserstack.com:80/wd/hub'</msg>
+<status status="PASS" endtime="20160122 13:01:20.225" starttime="20160122 13:01:08.654"></status>
+</kw>
+<status status="PASS" endtime="20160122 13:01:20.226" starttime="20160122 13:01:08.654"></status>
+</kw>
+<kw name="User Selects Inquire" library="openBrowser">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>${INQUIRE}</arg>
+</arguments>
+<msg timestamp="20160122 13:01:20.227" level="INFO">Verifying element 'css=a.header__menu-item--always-show' is visible.</msg>
+<status status="PASS" endtime="20160122 13:01:21.405" starttime="20160122 13:01:20.226"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${INQUIRE}</arg>
+</arguments>
+<msg timestamp="20160122 13:01:21.406" level="INFO">Clicking element 'css=a.header__menu-item--always-show'.</msg>
+<status status="PASS" endtime="20160122 13:01:23.513" starttime="20160122 13:01:21.405"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${CONTACT}</arg>
+</arguments>
+<status status="PASS" endtime="20160122 13:01:24.164" starttime="20160122 13:01:23.514"></status>
+</kw>
+<status status="PASS" endtime="20160122 13:01:24.164" starttime="20160122 13:01:20.226"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160122 13:01:29.030" starttime="20160122 13:01:24.164"></status>
+</kw>
+<status status="PASS" endtime="20160122 13:01:29.030" critical="yes" starttime="20160122 13:01:08.653"></status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160122 13:01:29.032" starttime="20160122 13:01:29.032"></status>
+</kw>
+<status status="PASS" endtime="20160122 13:01:29.032" starttime="20160122 13:00:32.205"></status>
+</suite>
+<status status="PASS" endtime="20160122 13:01:29.035" starttime="20160122 12:59:27.638"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Win8 Firefox &amp; Win8 Chrome" pass="4">Win8 Firefox &amp; Win8 Chrome</stat>
+<stat fail="0" id="s1-s1" name="Win8 Firefox" pass="2">Win8 Firefox &amp; Win8 Chrome.Win8 Firefox</stat>
+<stat fail="0" id="s1-s2" name="Win8 Chrome" pass="2">Win8 Firefox &amp; Win8 Chrome.Win8 Chrome</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
