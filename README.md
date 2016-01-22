@@ -1,2 +1,2 @@
 # Robot-BrowserStack
-Robot Framework template for cross browser testing with BrowserStack
+Robot Framework template for testing with Applitools Eyes.
