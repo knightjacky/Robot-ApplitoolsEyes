@@ -31,7 +31,7 @@ sudo chmod 777 BrowserStackLoal
 ```
 clone the fork and run the test
 ```
-pybot -d results Tests/Master/Login_Logout.robot
+pybot -d results Tests/Login_Logout.robot
 ```
 
 
