@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74432ce6-bb2c-467e-8ce5-9dd6b795208e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/Login_Logout.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resource/resource.robot" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/openBrowser.robot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/Master/openBrowserTest.robot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/Windows10/Win10_Chrome.robot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/Windows10/Win10_Edge.robot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/Windows10/Win10_Firefox.robot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/Windows10/Win10_IE11.robot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/Windows7/Win7_Chrome.robot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/Windows7/Win7_Firefox.robot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/Windows7/Win7_IE11.robot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/Windows8.1/Win8.1_Chrome.robot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/Windows8.1/Win8.1_Firefox.robot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/Windows8.1/Win8.1_IE11.robot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/Windows8/Win8_Chrome.robot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/Windows8/Win8_Firefox.robot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/log.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/output.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/report.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="Robot-ApplitoolsEyes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,11 +26,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Login_Logout.robot" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Login_Logout.robot" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/Login_Logout.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.43584523" vertical-offset="304" max-vertical-offset="795">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="795">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resource.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resource/resource.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="664" max-vertical-offset="1155">
+              <caret line="45" column="149" selection-start-line="45" selection-start-column="149" selection-end-line="45" selection-end-column="149" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.77223426" vertical-offset="154" max-vertical-offset="675">
+              <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -69,6 +74,7 @@
         <option value="$PROJECT_DIR$/Resource/loginPage.robot" />
         <option value="$PROJECT_DIR$/Tests/Master/Login_Logout.robot" />
         <option value="$PROJECT_DIR$/Tests/Login_Logout.robot" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -246,10 +252,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2890411" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2890411" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -321,18 +327,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resource/resource.robot">
+    <entry file="file://$PROJECT_DIR$/Tests/Login_Logout.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1155">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="795">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/Login_Logout.robot">
+    <entry file="file://$PROJECT_DIR$/Resource/resource.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.43584523" vertical-offset="304" max-vertical-offset="795">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="664" max-vertical-offset="1155">
+          <caret line="45" column="149" selection-start-line="45" selection-start-column="149" selection-end-line="45" selection-end-column="149" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77223426" vertical-offset="154" max-vertical-offset="675">
+          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
           <folding />
         </state>
       </provider>
