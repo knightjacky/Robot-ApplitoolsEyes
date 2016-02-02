@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160129 17:20:24.359" generator="Robot 3.0 (Python 2.7.10 on darwin)">
+<suite source="/Users/jacky/git/robot/Robot-ApplitoolsEyes/Tests/Master/Login_Logout.robot" id="s1" name="Login Logout">
+<test id="s1-t1" name="Test Login And Logout Cambridge Website">
+<kw name="Open Browser To Home Page" library="loginPage">
+<arguments>
+<arg>BROWSER=Chrome</arg>
+<arg>BROWSER VERSION=47.0</arg>
+<arg>OS=Windows</arg>
+<arg>OS VERSION=7</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>url=${URL}</arg>
+<arg>browser=chrome</arg>
+<arg>alias=None</arg>
+<arg>remote_url=http://rehanarajwani1:bwrxEqELu83iJs4DsBws@hub.browserstack.com:80/wd/hub</arg>
+<arg>desired_capabilities=browserstack.local:true,browser:${BROWSER},browser_version:${BROWSER VERSION},os:${OS}, os_version:${OS VERSION},resolution:1680x1050</arg>
+</arguments>
+<msg timestamp="20160129 17:20:24.529" level="INFO">Opening browser 'chrome' to base url 'http://build.cambridgefx.com' through remote server at 'http://rehanarajwani1:bwrxEqELu83iJs4DsBws@hub.browserstack.com:80/wd/hub'</msg>
+<status status="PASS" endtime="20160129 17:20:36.509" starttime="20160129 17:20:24.529"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>${LOGINFORM}</arg>
+</arguments>
+<msg timestamp="20160129 17:20:36.509" level="INFO">Verifying element 'css=form.loginForm' is visible.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20160129 17:20:37.018" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20160129 17:20:37.018" starttime="20160129 17:20:36.666"></status>
+</kw>
+<msg timestamp="20160129 17:20:37.019" level="FAIL">The element 'css=form.loginForm' should be visible, but it is not.</msg>
+<status status="FAIL" endtime="20160129 17:20:37.019" starttime="20160129 17:20:36.509"></status>
+</kw>
+<status status="FAIL" endtime="20160129 17:20:37.019" starttime="20160129 17:20:24.528"></status>
+</kw>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" endtime="20160129 17:20:37.020" critical="yes" starttime="20160129 17:20:24.528">The element 'css=form.loginForm' should be visible, but it is not.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160129 17:20:42.655" starttime="20160129 17:20:37.021"></status>
+</kw>
+<doc>This suite test for Cambridge login and logout functions</doc>
+<status status="FAIL" endtime="20160129 17:20:42.655" starttime="20160129 17:20:24.361"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">Smoke</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Login Logout" pass="0">Login Logout</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20160129 17:20:24.526" level="WARN">Imported resource file '/Users/jacky/git/robot/Robot-ApplitoolsEyes/Resource/mainPage.robot' is empty.</msg>
+</errors>
+</robot>
